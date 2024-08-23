@@ -16,7 +16,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: beige;
     margin-bottom: 1rem;
 }
 
@@ -55,6 +54,76 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.navegador {
+    position: fixed;
+    bottom: 0;
+    width: 100vw ;
+    display: flex;
+    justify-content: space-around; 
+    background-color: #f2f2f2; 
+    padding: 10px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); 
+}
+
+/* Estilos para los botones */
+.navegador__boton {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    flex: 1;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navegador__boton:hover {
+    background-color: #e0e0e0; /* Color de fondo al hacer hover */
+}
+
+.imagen {
+    width: 50px; /* Ajusta el tamaño de la imagen para que no se desborde */
+    height: 50px;
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+/* Estilos para el label */
+.label {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: #333; /* Color del texto */
+}
+
+
+/* Estilos por pagina */
+.angular{
+    background-color: rgba(252, 192, 192, 0.856);
+}
+
+.angular__header{
+    background-color: rgb(224, 81, 81);
+    color: rgb(240, 240, 240);
+}
+
+.typescript{
+    background-color: rgba(152, 194, 248, 0.774);
+}
+
+.typescript__header{
+    background-color: rgb(21, 96, 167);
+    color: rgb(240, 240, 240);
+}
+
+.ionic{
+    background-color: rgba(129, 203, 252, 0.774);
+}
+
+.ionic__header{
+    background-color: rgb(16, 103, 161);
+    color: rgb(240, 240, 240);
 }
 
 /* .menu {
