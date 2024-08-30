@@ -12,11 +12,20 @@
 .headerContent {
     width: 100vw;
     height: 5rem;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.5);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    text-align: center;
+}
+
+.headerContent__Logo{
+    width: 50px; /* Ajusta el tamaño de la imagen para que no se desborde */
+    height: 50px;
+    max-width: 100%;
+    padding: 0.5rem;
 }
 
 .textContent {
@@ -25,35 +34,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
+    padding-bottom: 120px;
 }
 
 .textContent__texto{
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
 }
 
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.margin-bottom {
-    margin-bottom: 1rem;
-}
-
-.header {
-    width: 100vw;
-    height: 5rem;
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
+.textContent__texto p{
+    text-align: justify;
 }
 
 .navegador {
@@ -64,10 +58,12 @@
     justify-content: space-around; 
     background-color: #f2f2f2; 
     padding: 10px;
+    margin-top: 1rem;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); 
+    padding: 10px 0;
 }
 
-/* Estilos para los botones */
+
 .navegador__boton {
     display: flex;
     flex-direction: column; 
@@ -77,10 +73,12 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    
 }
 
 .navegador__boton:hover {
-    background-color: #e0e0e0; /* Color de fondo al hacer hover */
+    background-color: #919191; /* Color de fondo al hacer hover */
 }
 
 .imagen {
@@ -92,10 +90,63 @@
 /* Estilos para el label */
 .label {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 1.2rem;
     text-align: center;
     color: #333; /* Color del texto */
 }
+
+/* Estilos Responsive para Tabletas */
+@media (min-width: 600px) and (max-width: 950px) {
+    .headerContent {
+        justify-content: flex-start;
+    }
+
+    .textContent {
+        margin-left: 15vw; /* Deja espacio para el header fijo */
+        width: 80vw;
+        flex-wrap: wrap; /* Permite que los elementos se agrupen en filas de 2 */
+        align-items: flex-start;
+        height: auto;
+        padding: 20px; /* Añade algo de relleno */
+
+    }
+
+    .textContent__texto {
+        width: 100%; /* Ajusta el ancho para que se agrupen en filas de 2 */
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .textContent__texto article{
+        width: 45%;
+    }
+
+    .textContent__texto p {
+        font-size: 1.1rem; /* Aumenta ligeramente el tamaño de fuente */
+    }
+
+    .navegador {
+        left: 0; /* Pegado al lado izquierdo */
+        top: 50%; /* Centrado verticalmente */
+        transform: translateY(-50%); /* Ajuste de centrado */
+        height: auto;
+        width: 15vw; /* Ancho similar al header */
+        display: flex;
+        flex-direction: column; /* Coloca el contenido en columnas */
+        justify-content: flex-start;
+    }
+
+    .navegador__boton {
+        justify-content: flex-start; 
+        border: none;
+        cursor: pointer;
+        width: 100%; /* Toma todo el ancho */
+    }
+
+}
+
+
 
 
 /* Estilos por pagina */
@@ -126,42 +177,3 @@
     color: rgb(240, 240, 240);
 }
 
-/* .menu {
-    justify-content: space-evenly;
-    background-color: #ffffff;
-    border-top: 2px solid rgba(0, 0, 0, 0.5);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-
-.menu-item {
-    width: 25%;
-    height: 5rem;
-}
-
-
-
-@media (min-width: 650px) and (max-width: 960px) {
-    .header {
-        justify-content: flex-start;
-        padding: 1rem;
-    }
-
-    .menu {
-        width: 40px;
-        height: 64px;
-        flex-direction: column;
-        left: 12px;
-        top: 30vh;
-    }
-}
-
-@media (min-width: 961px) {
-    .header {
-        width: 280px;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-    }
-} */
