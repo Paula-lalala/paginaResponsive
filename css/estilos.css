@@ -47,9 +47,22 @@
     gap: 1.5rem;
 }
 
+.textContent__texto h3{
+    text-align: left;
+}
+
+.imagenTexto{
+    padding-top: 5%;
+    width: 80vw;
+}
+
 .textContent__texto p{
     padding-top: 1.5rem;
     text-align: justify;
+}
+
+.textContent__texto span{
+    font-weight: bold;
 }
 
 .navegador {
@@ -123,16 +136,8 @@
         width: 45%;
     }
 
-    .textContent__texto h3{
-        text-align: left;
-    }
-
     .textContent__texto p {
         font-size: 1.1rem; /* Aumenta ligeramente el tamaño de fuente */
-    }
-
-    .textContent__texto span{
-        font-weight: bold;
     }
 
     .navegador {
