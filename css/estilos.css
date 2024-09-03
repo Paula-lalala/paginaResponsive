@@ -36,6 +36,7 @@
     align-items: center;
     height: auto;
     padding-bottom: 120px;
+    
 }
 
 .textContent__texto{
@@ -60,7 +61,7 @@
     padding: 10px;
     margin-top: 1rem;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); 
-    padding: 10px 0;
+    padding: 0;
 }
 
 
@@ -107,8 +108,7 @@
         flex-wrap: wrap; /* Permite que los elementos se agrupen en filas de 2 */
         align-items: flex-start;
         height: auto;
-        padding: 20px; /* Añade algo de relleno */
-
+        padding: 30px; /* Añade algo de relleno */
     }
 
     .textContent__texto {
@@ -130,18 +130,19 @@
         left: 0; /* Pegado al lado izquierdo */
         top: 50%; /* Centrado verticalmente */
         transform: translateY(-50%); /* Ajuste de centrado */
-        height: auto;
-        width: 15vw; /* Ancho similar al header */
+        height: calc(90% - 5rem);
+        width: 18vw; /* Ancho similar al header */
         display: flex;
         flex-direction: column; /* Coloca el contenido en columnas */
         justify-content: flex-start;
     }
 
     .navegador__boton {
+        padding-top: 10vh;
         justify-content: flex-start; 
         border: none;
         cursor: pointer;
-        width: 100%; /* Toma todo el ancho */
+        width: 90%; /* Toma todo el ancho */
     }
 
 }
@@ -149,7 +150,6 @@
 
 
 
-/* Estilos por pagina */
 .angular{
     background-color: rgba(252, 192, 192, 0.856);
 }
