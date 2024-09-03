@@ -192,6 +192,14 @@
     .headerContent {
         justify-content: flex-start;; 
     }
+
+    .navegador {
+        top: auto; 
+        right: 0;
+        position: relative; 
+        transform: none; 
+        display: flex; 
+    }
 }
 
 
