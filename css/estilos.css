@@ -48,6 +48,7 @@
 }
 
 .textContent__texto p{
+    padding-top: 1.5rem;
     text-align: justify;
 }
 
@@ -61,7 +62,7 @@
     padding: 10px;
     margin-top: 1rem;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3); 
-    padding: 0;
+    padding: 10px 0;
 }
 
 
@@ -122,8 +123,16 @@
         width: 45%;
     }
 
+    .textContent__texto h3{
+        text-align: left;
+    }
+
     .textContent__texto p {
         font-size: 1.1rem; /* Aumenta ligeramente el tamaño de fuente */
+    }
+
+    .textContent__texto span{
+        font-weight: bold;
     }
 
     .navegador {
@@ -131,10 +140,11 @@
         top: 50%; /* Centrado verticalmente */
         transform: translateY(-50%); /* Ajuste de centrado */
         height: calc(90% - 5rem);
-        width: 18vw; /* Ancho similar al header */
+        width: 15vw; /* Ancho similar al header */
         display: flex;
         flex-direction: column; /* Coloca el contenido en columnas */
         justify-content: flex-start;
+        padding: 0;
     }
 
     .navegador__boton {
