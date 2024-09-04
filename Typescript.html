@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="typescript">
     <header class="headerContent typescript__header">
         <img class="headerContent__Logo" src="rest/imagenes/Typescript.png" alt="typescript__logo">
@@ -23,7 +26,7 @@
             <img id="img-angular" class="imagen" src="rest/imagenes/Angular.png" alt="Angular">
             <label class="label">Angular</label>
         </a>
-        <a class="navegador__boton"  href="Ionic.html">
+        <a class="navegador__boton" href="Ionic.html">
             <img id="img-ionic" class="imagen" src="rest/imagenes/ionic.png" alt="Ionic">
             <label class="label">Ionic</label>
         </a>
@@ -32,14 +35,15 @@
         <section class="textContent__texto">
             <article>
                 <h2>¿Qué es typescript?</h2>
-                <p>TypeScript (TS) es un lenguaje de programación que se basa en JavaScript (JS) pero que incorpora diversas 
+                <p>TypeScript (TS) es un lenguaje de programación que se basa en JavaScript (JS) pero que incorpora
+                    diversas
                     características adicionales. Esto permite escribir código con menos errores, de manera más sencilla,
                     coherente y fácil de probar, resultando en un código más limpio y robusto.
-                    Desarrollado por Microsoft en 2012, su uso ha ido en aumento desde entonces, 
-                    especialmente tras la decisión de Google de adoptarlo como el lenguaje predeterminado para Angular. 
+                    Desarrollado por Microsoft en 2012, su uso ha ido en aumento desde entonces,
+                    especialmente tras la decisión de Google de adoptarlo como el lenguaje predeterminado para Angular.
                     Actualmente, TypeScript se puede utilizar en muchos de los frameworks y bibliotecas más destacados,
                     como React para el frontend y Node para el backend.
-                </p> 
+                </p>
             </article>
             <article>
                 <h2>Sintaxis</h2>
@@ -52,31 +56,77 @@
             </article>
             <article>
                 <h2>varibales</h2>
-                <p>es “un espacio con nombre en la memoria” que almacena valores. En otras palabras, actúa como un contenedor de valores en un programa. Las variables de TypeScript deben seguir las reglas de nomenclatura de JavaScript:
+                <p>Es “un espacio con nombre en la memoria” que almacena valores. En otras palabras, actúa como un
+                    contenedor de valores en un programa. Las variables de TypeScript deben seguir las reglas de
+                    nomenclatura de JavaScript:
                     -Los nombres de variables pueden contener letras y dígitos numéricos.
-                    -No pueden contener espacios ni caracteres especiales, excepto el guión bajo (_) y el signo de dólar ($).
+                    -No pueden contener espacios ni caracteres especiales, excepto el guión bajo (_) y el signo de dólar
+                    ($).
                     -Los nombres de variables no pueden comenzar con un dígito.
                 </p>
-                <p>string: cadenas de texto
-                    number: números
-                    boolean: verdadero o falso
-                    any: cualquier tipo
-                    void: ausencia de tipo (usado en funciones que no devuelven valor)</p>
+                <p><span>string: cadenas de texto</span></p>
+                <p><span>number: números</span></p>
+                <p><span>boolean: verdadero o falso</span></p>
+                <p><span>any: cualquier tipo</span></p>
+                <p><span>void: ausencia de tipo (usado en funciones que no devuelven valor)</span></p>
                 <img class="imagenTexto" src="rest/imagenes/variables.png" alt="declaracion_de_variables">
             </article>
             <article>
                 <h2>Clases</h2>
-                <p>imagen y texto</p>
+                <p>Las clases en TypeScript sirven como plantillas para crear objetos,
+                    permitiendo declarar atributos y métodos que comparten.
+                </p>
+                <img class="imagenTexto" src="rest/imagenes/clases.png" alt="declaracion_de_variables">
+            </article>
+            <article>
+                <h2>Interface</h2>
+                <p>Las interfaces en TypeScript son una forma de definir la estructura de un objeto.
+                    Actúan como un contrato que especifica qué propiedades y métodos debe tener un objeto, permitiendo
+                    así un uso más seguro y organizado del código.
+                </p>
+                <img class="imagenTexto" src="rest/imagenes/interfase.png" alt="declaracion_de_variables">
+            </article>
+            <article>
+                <h2>Metodos</h2>
+                <p>Los métodos en TypeScript son funciones que se definen dentro de una clase y que operan sobre las
+                    propiedades de esa clase.
+                    Los métodos permiten encapsular comportamientos y lógica que están relacionados con los objetos de
+                    esa clase.
+                </p>
+                <img class="imagenTexto" src="rest/imagenes/metodos.png" alt="declaracion_de_variables">
             </article>
             <article>
                 <h2>Types</h2>
-                <p>los "types" (tipos) son una forma de definir la estructura y el tipo de los datos que se pueden utilizar en una aplicación.
-                TypeScript es un superconjunto de JavaScript que agrega tipado estático,
-                lo que ayuda a detectar errores en tiempo de compilación en lugar de en tiempo de ejecución.
+                <p>los "types" (tipos) son una forma de definir la estructura y el tipo de los datos que se pueden
+                    utilizar en una aplicación.
+                    TypeScript es un superconjunto de JavaScript que agrega tipado estático,
+                    lo que ayuda a detectar errores en tiempo de compilación en lugar de en tiempo de ejecución.
                 </p>
+            </article>
+            <article>
+                <h2>Conceptos Básicos</h2>
+                <h3>Ciclos</h3>
+                <p>Los ciclos permiten ejecutar un bloque de código múltiples veces. TypeScript soporta los ciclos
+                    <code>for</code>, <code>while</code> y <code>do...while</code>.</p>
+                <h3>Condicionales</h3>
+                <p>Las estructuras condicionales permiten ejecutar diferentes bloques de código basados en condiciones.
+                    TypeScript usa <code>if</code>, <code>else if</code> y <code>else</code>.</p>
+            </article>
+            <article>
+                <h2>Arrays y Listas</h2>
+                <p>Los arrays en TypeScript permiten almacenar múltiples valores del mismo tipo. Puedes definir arrays
+                    de cualquier tipo, incluyendo números, cadenas y más.</p>
+                <img class="imagenTexto" src="rest/imagenes/arrays.png" alt="Arrays y Listas">
+            </article>
+            <article>
+                <h2>Funciones</h2>
+                <p>Las funciones en TypeScript pueden tener tipos de parámetros y un tipo de retorno específico. Esto
+                    ayuda a asegurar que la función se utilice correctamente y que los datos sean del tipo esperado.</p>
+                <img class="imagenTexto" src="rest/imagenes/funciones.png" alt="Funciones">
             </article>
         </section>
     </section>
 </body>
 <script src="js/script.js"></script>
+
 </html>
