@@ -1,5 +1,6 @@
 :root{
     font-size: 16px;
+    font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -22,14 +23,14 @@
 }
 
 .headerContent__Logo{
-    width: 50px; /* Ajusta el tamaño de la imagen para que no se desborde */
+    width: 50px; 
     height: 50px;
     max-width: 100%;
     padding: 0.5rem;
 }
 
 .textContent {
-    width: 100vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,22 +94,50 @@
 }
 
 .navegador__boton:hover {
-    background-color: #919191; /* Color de fondo al hacer hover */
+    background-color: #919191; 
 }
 
 .imagen {
-    width: 50px; /* Ajusta el tamaño de la imagen para que no se desborde */
+    width: 50px; 
     height: 50px;
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-width: 100%; 
 }
 
-/* Estilos para el label */
 .label {
     margin-top: 5px;
     font-size: 1.2rem;
     text-align: center;
-    color: #333; /* Color del texto */
+    color: #333;
 }
+
+/*Estilos para cada pagina*/
+.angular{
+    background-color: rgba(252, 192, 192, 0.856);
+}
+
+.angular__header{
+    background-color: rgb(224, 81, 81);
+    color: rgb(240, 240, 240);
+}
+
+.typescript{
+    background-color: rgba(152, 194, 248, 0.774);
+}
+
+.typescript__header{
+    background-color: rgb(21, 96, 167);
+    color: rgb(240, 240, 240);
+}
+
+.ionic{
+    background-color: rgba(129, 203, 252, 0.774);
+}
+
+.ionic__header{
+    background-color: rgb(16, 103, 161);
+    color: rgb(240, 240, 240);
+}
+
 
 /* Estilos Responsive para Tabletas */
 @media (min-width: 600px) and (max-width: 950px) {
@@ -118,7 +147,6 @@
 
     .textContent {
         margin-left: 15vw; 
-        width: 80vw;
         flex-wrap: wrap; 
         align-items: flex-start;
         height: auto;
@@ -162,11 +190,11 @@
 
 }
 
+/* Estilos Responsive para Computadores */
 @media (min-width: 950px) {
     
     .textContent {  
         margin: 2rem;
-        width: 90vw;
         flex-wrap: wrap; 
         align-items: flex-start;
         height: auto;
@@ -190,44 +218,27 @@
     }
 
     .headerContent {
-        justify-content: flex-start;; 
+        justify-content: flex-start;
+        margin: 0;
     }
 
     .navegador {
-        top: auto; 
+        margin: 0;
+        top: auto;
         right: 0;
         position: relative; 
         transform: none; 
         display: flex; 
     }
+    
+    .imagen {
+    width: auto;
+    height: 50px;
+    max-width: 100%; 
 }
 
 
-
-.angular{
-    background-color: rgba(252, 192, 192, 0.856);
 }
 
-.angular__header{
-    background-color: rgb(224, 81, 81);
-    color: rgb(240, 240, 240);
-}
 
-.typescript{
-    background-color: rgba(152, 194, 248, 0.774);
-}
-
-.typescript__header{
-    background-color: rgb(21, 96, 167);
-    color: rgb(240, 240, 240);
-}
-
-.ionic{
-    background-color: rgba(129, 203, 252, 0.774);
-}
-
-.ionic__header{
-    background-color: rgb(16, 103, 161);
-    color: rgb(240, 240, 240);
-}
 
